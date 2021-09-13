@@ -1,0 +1,19 @@
+pipeline
+{
+  agent any
+  {
+     stages
+     {
+      stage('check maven version')
+      {
+          steps
+          {
+           bat 'mvn -v'
+           
+           }
+      }
+      
+     
+     }
+   }
+ }
